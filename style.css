@@ -1,0 +1,72 @@
+*{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+.navbar{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#frontpage,
+#intro,
+#skills,
+#project{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	/* color: #fff; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.frontpage{
+  height: 100%;
+  width: 100%;
+  background-color: lightgray;
+}
+
+.intro{
+  height: 100%;
+}
+
+.project{
+  height: 100%;
+  background-color: lightgray;
+}
+
+.skills{
+  height: 100%;
+}
+
+.footer{
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* not-provided 클래스 기본적으로 보이지 않도록 */
+.not-provided{
+  display: none;
+}
+
+/* 470px 이하일 때 not-provided만 보이도록 */
+@media (max-width: 470px){
+  main,
+  section,
+  .navbar,
+  .footer{
+    display: none;
+  }
+  .not-provided{
+    display: block;
+  } 
+}
