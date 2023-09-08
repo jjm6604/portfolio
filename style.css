@@ -1,5 +1,6 @@
 *{
   font-family: 'Noto Sans KR', sans-serif;
+
 }
 html {
   width: 100%;
@@ -8,7 +9,19 @@ html {
 .navbar{
   padding-left: 50px;
   padding-right: 50px;
+  font-weight: bold;
 }
+
+.nav-item{
+  padding: 5px 20px ;
+  
+}
+
+#content-box{
+  margin: 0;
+  padding: 0;
+}
+
 #frontpage,
 #intro,
 #skills,
@@ -16,7 +29,6 @@ html {
 	position: relative;
 	height: 100vh;
 	width: 100%;
-	/* color: #fff; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -26,17 +38,58 @@ html {
   height: 100%;
   width: 100%;
   background-color: lightgray;
+  font-weight: bold;
+}
+
+#front-container{
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: xx-large;
+  padding: 5%;
+}
+
+#main-image{
+  width: 100%;
 }
 
 .intro{
   height: 100%;
 }
+#intro-title, #skill-title{
+  color: black;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 40px;
+}
+/* #intro-container{
+} */
+/* 여기부터 */
+#intro-item{
+  height: 80%;
+}
 
+
+
+/* 여기까지 */
 .project{
   height: 100%;
   background-color: lightgray;
 }
 
+#project-container{
+  align-items: center;
+  text-align: center;
+}
+
+#project-title{
+  color: white;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  padding: 40px;
+}
 .skills{
   height: 100%;
 }
@@ -53,10 +106,16 @@ html {
   align-items: center;
 }
 
+.skill-image{
+  width: 15%;
+  margin: 20px;
+}
+
 /* not-provided 클래스 기본적으로 보이지 않도록 */
 .not-provided{
   display: none;
 }
+
 
 /* 470px 이하일 때 not-provided만 보이도록 */
 @media (max-width: 470px){
@@ -70,3 +129,8 @@ html {
     display: block;
   } 
 }
+
+
+/*  */
+
+

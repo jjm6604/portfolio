@@ -1,0 +1,99 @@
+ul,li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none
+}
+
+.history {
+  width: 100%;
+  height: 80%;
+  margin: 0 auto;
+}
+
+.history h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #444;
+  line-height: 1;
+  margin-top: 30px;
+}
+
+.list_right {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.list_right span {
+  display: table-cell;
+  width: 10%;
+  vertical-align: top;
+}
+
+.list_right div {
+  position: relative;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.list_right div:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: #dfdfdf;
+}
+
+.list_right div ul {
+  margin-top: 20px; 
+}
+
+.list_right div ul li {
+  display: table;
+  position: relative;
+  width: 100%;
+  padding-left: 0;
+}
+
+.list_right div ul li+li {
+  margin-top: 20px;
+}
+
+.list_right div ul li:before {
+  content: "";
+  position: absolute;
+  left: -38px;
+  top: 7px;
+  width: 12px;
+  height: 12px;
+  border: 3px solid #8a8a8a;
+  border-radius: 50%;
+}
+
+.list_right dl {
+  text-align: left;
+  display: table;
+  width: 100%;
+}
+
+.list_right dl dt {
+  width: 50%;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #444;
+  font-weight: bold;
+  text-align: left;
+}
+
+.list_right dl dd {
+  width: 100%px;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 13px;
+  color: #444;
+  text-align: left;
+}
